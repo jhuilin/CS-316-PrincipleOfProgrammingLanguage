@@ -1,0 +1,41 @@
+main()
+{
+	print test[10, 10];
+
+	test[10, 10] = 10;
+
+	test = 10;
+	print test[10, 10];
+	test[10, 10] = 10;
+
+	test = new [10, fact(3)+0.5];
+
+	test = new [10, -fact(3)];
+
+	test = new [10, 10];
+
+	print test[5, fact(3)+0.5];
+	print test[5, fact(4)];
+	print test[-fact(3), 5];
+
+	test[5, fact(3)+0.5] = 10;
+	test[5, fact(4)] = 10;
+	test[-fact(3), 5] =10;
+
+	print test[5, 5];
+
+	test[5, 5] = 10;
+	print test[5, 5];
+}
+
+fact(n)
+{
+	i = 0;
+	fact = 1;
+	while ( i < n )
+	{
+		i = i+1;
+		fact = i*fact;
+	}
+	returnVal = fact;
+}

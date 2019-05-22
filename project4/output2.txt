@@ -1,0 +1,14 @@
+array variable test does not have a value
+array variable test does not have a value
+variable test has a non-array value: 10
+variable test has a non-array value: 10
+Error: array size expression evaluated to non-integer: 6.5
+Error: array size expression evaluated to non-positive integer: -6
+Error: index expression of array test evaluated to non-integer: 6.5
+Error: index value of array test out of range: 24
+Error: index value of array test out of range: -6
+Error: index expression of array test evaluated to non-integer: 6.5
+Error: index value of array test out of range: 24
+Error: index value of array test out of range: -6
+element of array test does not have a value
+10

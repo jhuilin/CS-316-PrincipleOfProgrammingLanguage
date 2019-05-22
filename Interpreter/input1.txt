@@ -1,0 +1,144 @@
+square(x)
+{
+	returnVal = x*x;
+}
+
+pi()
+{
+	returnVal = 3.14159;
+}
+
+cylinderVolume(length, radius)
+{
+    returnVal = length * ( pi() * (square(radius)) );
+}
+    
+fact(n)
+{
+	i = 0;
+	fact = 1;
+	while ( i < n )
+	{
+		i = i+1;
+		fact = i*fact;
+	}
+	returnVal = fact;
+}
+
+recursiveFact(n)
+{		
+	if ( n == 0 )
+		returnVal = 1;
+	else
+		returnVal = n * recursiveFact(n-1);
+}
+
+fib(n)
+{
+	if ( n <= 1 )
+		returnVal = n;
+	else
+		returnVal = fib(n-1) + fib(n-2);
+
+}
+
+greatestCommonDivisor(x, y)
+{
+    if (x == y) returnVal = x;
+    else if (x < y) returnVal = greatestCommonDivisor(x, y-x);
+    else returnVal = greatestCommonDivisor(x-y, y);
+}
+
+testCond(n)
+{
+    if (n < 0) returnVal = -1;
+    else if (n >= 0 && n < 10) returnVal = 5;
+    else if (n >= 10 && n < 20) returnVal = 15;
+    else if (n >= 20 && n < 30) returnVal = 25;
+    else if (n >= 30 && n < 40) returnVal = 35;
+    else returnVal = 45;
+}
+
+Ackermann(i, j)
+{
+    if (i == 0) returnVal = j+1;
+    else if (i > 0 && j == 0) returnVal = Ackermann(i-1, 1);
+    else returnVal = Ackermann(i-1, Ackermann(i, j- 1));
+}
+
+test(a1, a2, a3, x1, x2, x3)
+{
+    if (a1 < a2) returnVal = 123.0 + -76.0;   
+    else if ((x1 <= x3) && (a3 > a1)) returnVal = (7.0 / 0.78) - (54.0 * -0.123);
+    else if ((x1 < x3) || (a3 >= a1)) returnVal = (87.54 / 0.5E6) - (7.0e15 * -87.54e-23);
+    else if (x1 != x3) returnVal = (87.54e-9 / 0.5E+6) + (-7.0E-12 * 87.101e23);
+    else returnVal = (-87.54e-9 / 0.5E+6) + (-7.0 * 87.0e23);
+}
+
+arithExample(x1, x2, x3, x4, x5)
+{
+	returnVal = (x1 + x2 + x3 + x4 + x5) * (x1 - x2 - x3 - x4 - x5) * (x1 / x2 / x3 / x4 / x5);
+}
+
+BoolExample(b1, b2, b3, b4, b5)
+{
+	returnVal = (b1 || b2 || b3 || b4 || b5) && (b1 && b2 && b3 && b4 && b5) && !b3;
+}
+
+whileTest(a, b)
+{
+	x = 0;
+	y = 0;
+
+	i = 0;
+	while (i < a)
+	{
+		j = 0;
+		while (j < b)
+		{
+			x = x + i + j;
+			y = y + i - j;
+			j = j + 1;
+		}
+		i = i + 1;
+	}
+
+	print x;
+	print y;
+}
+
+main()
+{
+	print 1+2+3+4+5+6+7+8+9+10;
+	print 5/0;
+	print (9.0*8.0)/(9.0*0.0);
+	print 5.0 == 2+3;
+	print (2 < 3) == (5 >= 3.4);
+	print (2 < 3) == (5 >= 8.4);
+	print (2 < 3) == (2 != 3);
+	print fact(10)+fib(15);
+	print square(5);
+	print square(5.5e-2);
+	print cylinderVolume(3.0, 6.0);
+	print cylinderVolume(3.509e+2, square(4.0));
+	print fact(5);
+	print fact(10);
+	print recursiveFact(5);
+	print recursiveFact(10);
+	print fib(10);
+	print fib(20);
+	print fib(fact(2+2));
+	print greatestCommonDivisor(84, 36);
+	print greatestCommonDivisor(79, 711);
+	print testCond(-5);
+	print testCond(37);
+	print testCond(20/3);
+	print Ackermann(fact(2), fact(5));
+	print Ackermann(2, 150);
+	print test(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+	print test(3.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+	print test(3.0, 2.0, 30.0, 4.0, 5.0, 6.0);
+	print arithExample(84.0, 36.8E-2, 3.0, 4.0, 29.0);
+	print BoolExample(3 == 3.0, 2 < 3.2, 6.6 <= 4, -2 >= -1, 5 > 3.2);
+	whileTest(100, 100);
+}

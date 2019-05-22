@@ -1,0 +1,12 @@
+main()
+{
+	b = 10;
+	a = new [5+5, 10, b];
+	print a;
+	b = new [10];
+	print b;
+	b[5] = 7;
+	print b[5];
+	a[1, 0, 7] = 20;
+	print a[1, 0, b[5]];
+}

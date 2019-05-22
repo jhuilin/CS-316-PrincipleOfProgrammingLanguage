@@ -1,0 +1,60 @@
+arithExample(x1, x2, x3, x4, x5)
+{
+	returnVal = (x1 + x2 + x3 + x4 + x5) * (x1 - x2 - x3 - x4 - x5) * (x1 / x2 / x3 / x4 / x5);
+}
+
+false()
+{
+	returnVal = 0 < 0;
+}
+
+true()
+{
+	returnVal = 0 == 0;
+}
+
+main()
+{
+	x = 1;
+	print x;
+	x = 1.1;
+	print x;
+	x = 0 == 0;
+	print x;
+	print y;
+	print 1+2+3+4+5+6+7+8+9+10.0;
+	print 5/3;
+	print (9.0*8)/(9.0*7);
+	print (2 < 3) < (5 >= 3.4);
+	print (2 < 3) <= (5 >= 8.4);
+	print (2 < 3) > (2 != 3);
+	print (2 < 3) > (2 == 3);
+	print false()+2+3+4+5+6+7+8+9+10;
+	print 1+2+3+4+5+6+7+8+9+true();
+	print 1+2+3+4+false()+6+7+8+9+10;
+	print false()-2-3-4-5-6-7-8-9-10;
+	print 1-2-3-4-5-6-7-8-9-true();
+	print 1-2-3-4-false()-6-7-8-9-10;
+	print false()*2*3*4*5*6*7*8*9*10;
+	print 1*2*3*4*5*6*7*8*9*true();
+	print 1*2*3*4*false()*6*7*8*9*10;
+	print false()/2;
+	print 1/true();
+	print 2/1/false();
+	print -false();
+	print 5.0 < (2 < 3);
+	print (2 < 3) <= 5;
+	print 5.0 > (2 < 3);
+	print (2 < 3) >= 5;
+	print 5.0 == (2 < 3);
+	print (2 < 3) != 5;
+	print 1 || true() || true();
+	print true() || 1 || true();
+	print true() || true() || 1;
+	print 1 && false() && false();
+	print false() && 1 && false();
+	print false() && false() && 1;
+	print !1;
+	print arithExample(1, 2, 3, 4, false());
+	print arithExample(1, 2, 3, 4, y);
+}

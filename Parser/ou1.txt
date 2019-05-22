@@ -1,0 +1,266 @@
+0 <fun def list>
+ 1 <fun def>
+  2 <header>
+   3 <fun name> test
+   3 <parameter list>
+    4 <parameter> x1
+    4 <parameter> x2
+  2 <body>
+   3 <s list>
+    4 <statement>
+     5 <cond>
+      6 if
+      6 <expr>
+       7 <boolTerm>
+        8 <boolPrimary>
+         9 <E>
+          10 <term>
+           11 <primary>
+            12 <var primary>
+             13 <var>
+              14 <id var> x1
+         9 <
+         9 <E>
+          10 <term>
+           11 <primary>
+            12 <var primary>
+             13 <var>
+              14 <id var> x2
+      6 <statement>
+       7 <assignment>
+        8 <var>
+         9 returnVal
+        8 =
+        8 <right side>
+         9 <expr right side>
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary>
+                16 <var primary>
+                 17 <var>
+                  18 <id var> x1
+             13 <
+             13 <E>
+              14 <term>
+               15 <primary>
+                16 <var primary>
+                 17 <var>
+                  18 <id var> x2
+      6 else
+      6 <statement>
+       7 <cond>
+        8 if
+        8 <expr>
+         9 <boolTerm>
+          10 <boolPrimary>
+           11 <E>
+            12 <term>
+             13 <primary>
+              14 <var primary>
+               15 <var>
+                16 <id var> x1
+           11 <=
+           11 <E>
+            12 <term>
+             13 <primary>
+              14 <var primary>
+               15 <var>
+                16 <id var> x2
+        8 <statement>
+         9 <assignment>
+          10 <var>
+           11 returnVal
+          10 =
+          10 <right side>
+           11 <expr right side>
+            12 <expr>
+             13 <boolTerm>
+              14 <boolPrimary>
+               15 <E>
+                16 <term>
+                 17 <primary>
+                  18 <var primary>
+                   19 <var>
+                    20 <id var> x1
+               15 <=
+               15 <E>
+                16 <term>
+                 17 <primary>
+                  18 <var primary>
+                   19 <var>
+                    20 <id var> x2
+        8 else
+        8 <statement>
+         9 <cond>
+          10 if
+          10 <expr>
+           11 <boolTerm>
+            12 <boolPrimary>
+             13 <E>
+              14 <term>
+               15 <primary>
+                16 <var primary>
+                 17 <var>
+                  18 <id var> x1
+             13 >
+             13 <E>
+              14 <term>
+               15 <primary>
+                16 <var primary>
+                 17 <var>
+                  18 <id var> x2
+          10 <statement>
+           11 <assignment>
+            12 <var>
+             13 returnVal
+            12 =
+            12 <right side>
+             13 <expr right side>
+              14 <expr>
+               15 <boolTerm>
+                16 <boolPrimary>
+                 17 <E>
+                  18 <term>
+                   19 <primary>
+                    20 <var primary>
+                     21 <var>
+                      22 <id var> x1
+                 17 >
+                 17 <E>
+                  18 <term>
+                   19 <primary>
+                    20 <var primary>
+                     21 <var>
+                      22 <id var> x2
+          10 else
+          10 <statement>
+           11 <cond>
+            12 if
+            12 <expr>
+             13 <boolTerm>
+              14 <boolPrimary>
+               15 <E>
+                16 <term>
+                 17 <primary>
+                  18 <var primary>
+                   19 <var>
+                    20 <id var> x1
+               15 >=
+               15 <E>
+                16 <term>
+                 17 <primary>
+                  18 <var primary>
+                   19 <var>
+                    20 <id var> x2
+            12 <statement>
+             13 <assignment>
+              14 <var>
+               15 returnVal
+              14 =
+              14 <right side>
+               15 <expr right side>
+                16 <expr>
+                 17 <boolTerm>
+                  18 <boolPrimary>
+                   19 <E>
+                    20 <term>
+                     21 <primary>
+                      22 <var primary>
+                       23 <var>
+                        24 <id var> x1
+                   19 >=
+                   19 <E>
+                    20 <term>
+                     21 <primary>
+                      22 <var primary>
+                       23 <var>
+                        24 <id var> x2
+            12 else
+            12 <statement>
+             13 <cond>
+              14 if
+              14 <expr>
+               15 <boolTerm>
+                16 <boolPrimary>
+                 17 <E>
+                  18 <term>
+                   19 <primary>
+                    20 <var primary>
+                     21 <var>
+                      22 <id var> x1
+                 17 ==
+                 17 <E>
+                  18 <term>
+                   19 <primary>
+                    20 <var primary>
+                     21 <var>
+                      22 <id var> x2
+              14 <statement>
+               15 <assignment>
+                16 <var>
+                 17 returnVal
+                16 =
+                16 <right side>
+                 17 <expr right side>
+                  18 <expr>
+                   19 <boolTerm>
+                    20 <boolPrimary>
+                     21 <E>
+                      22 <term>
+                       23 <primary>
+                        24 <var primary>
+                         25 <var>
+                          26 <id var> x1
+                     21 ==
+                     21 <E>
+                      22 <term>
+                       23 <primary>
+                        24 <var primary>
+                         25 <var>
+                          26 <id var> x2
+              14 else
+              14 <statement>
+               15 <cond>
+                16 if
+                16 <expr>
+                 17 <boolTerm>
+                  18 <boolPrimary>
+                   19 <E>
+                    20 <term>
+                     21 <primary>
+                      22 <var primary>
+                       23 <var>
+                        24 <id var> x1
+                   19 !=
+                   19 <E>
+                    20 <term>
+                     21 <primary>
+                      22 <var primary>
+                       23 <var>
+                        24 <id var> x2
+                16 <statement>
+                 17 <assignment>
+                  18 <var>
+                   19 returnVal
+                  18 =
+                  18 <right side>
+                   19 <expr right side>
+                    20 <expr>
+                     21 <boolTerm>
+                      22 <boolPrimary>
+                       23 <E>
+                        24 <term>
+                         25 <primary>
+                          26 <var primary>
+                           27 <var>
+                            28 <id var> x1
+                       23 !=
+                       23 <E>
+                        24 <term>
+                         25 <primary>
+                          26 <var primary>
+                           27 <var>
+                            28 <id var> x2
